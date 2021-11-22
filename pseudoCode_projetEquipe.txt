@@ -55,5 +55,13 @@ AFFICHAGE MENU COMPTE PERSONNEL:
 
 Si l'utilisateur choisi 1:
 
+Afficher message "Changer de mot de passe"
+
+Si le nouveau mot de passe respecte les règles
+
+Afficher message "Confirmer le nouveau mot de passe"
+
+Lorsque l'utilisateur confirme le nouveau mot de passe, le système retourne au menu usager.
+
 
 
