@@ -1,0 +1,59 @@
+
+AFFICHAGE PRINCIPAL:
+
+Menu utilisateur:
+
+1- Se connecter à votre compte
+2- Se connecter comme administrateur
+3- Quitter
+
+
+
+Si l'utilisateur choisi 1:
+
+- Afficher message "Veuillez entrer vos identifiants"
+
+Si l'utilisateur entre des infos enregistrées, afficher le menu du compte personnel.
+
+Sinon, afficher message d'erreur. (Ne pas spécifier l'erreur)
+
+Si l'utilisateur fait 3 erreurs, bloquer le compte.
+
+Afficher message "Votre compte est bloqué".
+
+
+
+Si l'utilisateur choisi 2:
+
+- Afficher message "Veuillez entrer les identifiants administrateur"
+
+Si l'utilisateur entre des infos enregistriées, afficher le menu administrateur.
+
+Sinon, afficher message d'erreur. (Ne pas spécifier l'erreur)
+
+Si l'utilisateur fait 3 erreurs, le guichet tombe en mode panne.
+
+
+
+Si l'utilisateur choisi 3:
+
+Le système se termine.
+
+
+
+
+AFFICHAGE MENU COMPTE PERSONNEL:
+
+1- Changer le mot de passe
+2- Déposer un montant dans un compte
+3- Retirer un montant d'un compte
+4- Afficher le solde du compte (Chèque ou épargne)
+5- Effectuer un virement entre les comptes
+6- Payer une facture
+7- Fermer la session
+
+
+Si l'utilisateur choisi 1:
+
+
+
