@@ -13,13 +13,74 @@ Si l'utilisateur choisi 1:
 
 - Afficher message "Veuillez entrer vos identifiants"
 
-Si l'utilisateur entre des infos enregistrées, afficher le menu du compte personnel.
+Si l'utilisateur entre des infos enregistrées (NOM, NIP), afficher le menu du compte personnel.
 
-Sinon, afficher message d'erreur. (Ne pas spécifier l'erreur)
+AFFICHAGE MENU COMPTE PERSONNEL:
+
+1- Changer le mot de passe
+2- Déposer un montant dans un compte
+3- Retirer un montant d'un compte
+4- Afficher le solde du compte (Chèque ou épargne)
+5- Effectuer un virement entre les comptes
+6- Payer une facture
+7- Fermer la session
+
+Si l'utilisateur choisi 1:  Afficher changer votre mot de passe 
+ A- Mot de passe != au mot de passe actuel.
+ B- 4 caractères
+ C- Tout type de caractéres
+ D- Confirmer nouveau mot de passe
+ E- Traitement terminé, retour au menu usager
+ 
+ Si l'utilisateur choisi 2: Déposer un montant dans un compte
+ A- Afficher "Choisir un compte (Chèque ou Éparge)"
+ B- Lorsque l'utilisateur à choisit Chèque ou Épargne, afficher "Choisir un montant"
+ C- L'utilisateur doit choisir le montant à déposer (Supérieur à 0$)
+  A.N (mécanique pour valider que les données sont valides) = Seulement des chiffres sont acceptés)
+ D- Lorsque le dépôt est effectué, afficher le solde u compte et retour au menu du compte.
+  
+ Si l'utilisateur choisi 3: Retirer un montant d'un compte 
+  A- Afficher "quel compte à débiter"
+  B- Afficher choix de l'utilisateur 
+ A.N : Si montant > 10 000$, afficher message "Fonds insuffisants"
+ A.N : Montant doit être = chiffres avec point et virgule/ si c'est différent, alors afficher "Veuillez entrer une valeur valide"
+  C- Lorsque le dépôt est effectué, afficher le nouveau solde et retour au menu du compte
+ 
+Si l'utilisateur choisi 4: Afficher le solde du compte
+
+A- Afficher message "Veuillez sélectionner un compte (Chèque ou Épargne)"
+B- Si l'utilisateur sélectionne Chèque, afficher le solde du compte Chèque.
+C- Si l'utilisateur sélectionne Épargne, afficher le solde du compte Épargne.
+
+A.N : Le montant doit être affiché dans le format xx xxx.xx$
+ 
+ 
+ Si l'utilisateur choisi 5 : Effectuer un virement entre les comptes.
+ A- Afficher message "Veuillez sélectionner un compte (Chèque ou Épargne)"
+ B- Afficher message "Veuillez choisir le montant à virer"
+ C- Si le montant choisit est inférieur à 1000$ et que le compte à suffisamment de fonds, effectuer le transfert.
+ D- Si le montant choisit est supérieur à 1000$, demander le mot de passe de l'utilisateur avant d'effectuer le transfert.
+ E- Si 3 tentatives de mot de passe sont utilisés, Verouillez compte.
+ A.N: Le compte débiteur doit avoir suffisament de fonds.
+ A.N: Le montant ne peut pas excéder 1000$.
+ A.N: Lorsque le transfert est effectué, le système afficher les deux soldes.
+ 
+ 
+ 
+
+
+
+
+
+
+
+Sinon, afficher message d'erreur, valeur n'est pas valide. (Ne pas spécifier l'erreur)
 
 Si l'utilisateur fait 3 erreurs, bloquer le compte.
 
-Afficher message "Votre compte est bloqué".
+Afficher message "Votre compte est bloqué". 
+ A.N- trouver un mécanisme / boucle pour vérouiller le compte aprés 3 tentatives.
+ 
 
 
 
@@ -38,61 +99,3 @@ Si l'utilisateur fait 3 erreurs, le guichet tombe en mode panne.
 Si l'utilisateur choisi 3:
 
 Le système se termine.
-
-
-
-
-AFFICHAGE MENU COMPTE PERSONNEL:
-
-1- Changer le mot de passe
-2- Déposer un montant dans un compte
-3- Retirer un montant d'un compte
-4- Afficher le solde du compte (Chèque ou épargne)
-5- Effectuer un virement entre les comptes
-6- Payer une facture
-7- Fermer la session
-
-
-Si l'utilisateur choisi 1:
-
-Afficher message "Changer de mot de passe"
-
-Si le nouveau mot de passe respecte les règles
-
-Afficher message "Confirmer le nouveau mot de passe"
-
-Lorsque l'utilisateur confirme le nouveau mot de passe, le système retourne au menu usager.
-
-
-
-
-Si l'utilisateur choisi l'option 2 du menu compte perso:
-
-Afficher message "Déposer un montant dans un compte"
-
-Afficher message "Choisissez un compte: 1- Chèque 2- Épargne"
-
-Si l'utilisateur choisit Chèque, le dépôt va se faire dans le compte chèque.
-
-Si l'utilisateur choisit Épargne, le dépôt va se faire dans le compte épargne.
-
-L'utilisateur doit entrer le montant à déposer.
-
-Tant que le montant à déposer est négatif, afficher message "Veuillez entrer un montant valide"
-
-Lorsque le dépôt est effectué, afficher le solde du compte et retour au menu du compte.
-
-
-
-
-Si l'utilisateur choisi l'option 4 du menu compte perso:
-
-Afficher message "Veuillez sélectionner un compte (Chèque ou Épargne)"
-
-Si l'utilisateur sélectionne Chèque, afficher le solde du compte Chèque.
-
-Si l'utilisateur sélectionne Épargne, afficher le solde du compte Épargne.
-
-(Le montant doit être affiché dans le format xx xxx.xx$ )
-
-
