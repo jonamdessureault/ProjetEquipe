@@ -25,6 +25,7 @@ AFFICHAGE MENU COMPTE PERSONNEL:
 6- Payer une facture
 7- Fermer la session
 
+
 Si l'utilisateur choisi 1:  Afficher changer votre mot de passe 
  A- Mot de passe != au mot de passe actuel.
  B- 4 caractères
@@ -32,12 +33,14 @@ Si l'utilisateur choisi 1:  Afficher changer votre mot de passe
  D- Confirmer nouveau mot de passe
  E- Traitement terminé, retour au menu usager
  
+ 
  Si l'utilisateur choisi 2: Déposer un montant dans un compte
  A- Afficher "Choisir un compte (Chèque ou Éparge)"
  B- Lorsque l'utilisateur à choisit Chèque ou Épargne, afficher "Choisir un montant"
  C- L'utilisateur doit choisir le montant à déposer (Supérieur à 0$)
   A.N (mécanique pour valider que les données sont valides) = Seulement des chiffres sont acceptés)
  D- Lorsque le dépôt est effectué, afficher le solde u compte et retour au menu du compte.
+ 
   
  Si l'utilisateur choisi 3: Retirer un montant d'un compte 
   A- Afficher "quel compte à débiter"
@@ -46,8 +49,8 @@ Si l'utilisateur choisi 1:  Afficher changer votre mot de passe
  A.N : Montant doit être = chiffres avec point et virgule/ si c'est différent, alors afficher "Veuillez entrer une valeur valide"
   C- Lorsque le dépôt est effectué, afficher le nouveau solde et retour au menu du compte
  
+ 
 Si l'utilisateur choisi 4: Afficher le solde du compte
-
 A- Afficher message "Veuillez sélectionner un compte (Chèque ou Épargne)"
 B- Si l'utilisateur sélectionne Chèque, afficher le solde du compte Chèque.
 C- Si l'utilisateur sélectionne Épargne, afficher le solde du compte Épargne.
@@ -66,7 +69,21 @@ A.N : Le montant doit être affiché dans le format xx xxx.xx$
  A.N: Lorsque le transfert est effectué, le système afficher les deux soldes.
  
  
+ Si l'utilisateur choisi 6: Payer une facture.
+ A- Afficher les fournisseurs disponible
+ B- Lorsque l'utilisateur a entrer le fournisseur, afficher message "Veuillez entrer le numéro de facture"
+ C- Lorsque l'utilisateur a entrer le numéro de facture, afficher message "Veuillez choisir un montant"
+ D- Lorsque l'utilisateur a choisit un montant, afficher message "Veuillez choisir le compte duquel vous-voulez débiter le montant"
+ E- Lorsque l'utilisateur a choisit le compte, valider si le solde est suffisant pour effectuer le paiement. Sinon, afficher message "fonds insuffisants"
+ F- Si le solde est suffisant, demander à l'utilisateur s'il veut changer le montant.
+ G- Si l'utilisateur a choisit Non, effectuer le paiement et demander s'il veut retourner au menu principal.
  
+ A.N- Chaque paiement de facture inclus des frais de 2,00$.
+ 
+ 
+ 
+ Si l'utilisateur choisi 7: Fermer la session
+ A- Retour au menu principal (Si l'utilisateur veut effectuer une autre transaction, il doit resaisir son mot de passe)
 
 
 
