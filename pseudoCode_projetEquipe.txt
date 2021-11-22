@@ -13,13 +13,63 @@ Si l'utilisateur choisi 1:
 
 - Afficher message "Veuillez entrer vos identifiants"
 
-Si l'utilisateur entre des infos enregistrées, afficher le menu du compte personnel.
+Si l'utilisateur entre des infos enregistrées( NOM, NIP), afficher le menu du compte personnel.
 
-Sinon, afficher message d'erreur. (Ne pas spécifier l'erreur)
+( AFFICHAGE MENU COMPTE PERSONNEL:
+
+1- Changer le mot de passe
+2- Déposer un montant dans un compte
+3- Retirer un montant d'un compte
+4- Afficher le solde du compte (Chèque ou épargne)
+5- Effectuer un virement entre les comptes
+6- Payer une facture
+7- Fermer la session
+
+si l'utilisateur choisi 1:  afficher changer votre mot de passe 
+ a- mot de passe != du mot de passe actuel.
+ b- 4 caractéres
+ c- tout type de caractéres
+ d- confirmer nouveau mot de passe
+ e- traitement terminé retour au menu usager
+ 
+ si l'utilisateur choisi 2: déposer un montant dans un compte
+ afficher "dans quel compte le dépot doit étre effectué"
+  choix de l'utilisateur : chéque ou epargne.
+  A.N (mécanique pour valider que les données sont valides) = ca veut dire entrer que des chiffres pas de caractéres.
+  dépot effectué afficher le solde et retour au menu du compte.
+  
+  si l'utilisateur choisi 3: retirer un montant d'un compte 
+  afficher "quel compte à débiter"
+ afficher choix de l'utilisateur 
+ A.N : si montant > 10 000$ afficher fonds insuffisants
+ A.N : montant doit etre = chiffres avec point et virgule/ si c'est différent : alors afficher "veuillez entrer une valeur valide"
+ retrait effectué : afficher nouveau solde et retour au menu du compte
+ 
+ si l'utilisateur choisi 4:
+ 
+ 
+ 
+ 
+ 
+ si l'utilisateur choisi 5 : effectuer un virment entre les comptes.
+ condition 1 : montant n'excéde pas 1000$
+ condition 2 : compte débiteur = solde 
+ 
+ 
+
+
+
+
+
+
+
+Sinon, afficher message d'erreur, valeur n'est pas valide. (Ne pas spécifier l'erreur)
 
 Si l'utilisateur fait 3 erreurs, bloquer le compte.
 
-Afficher message "Votre compte est bloqué".
+Afficher message "Votre compte est bloqué". 
+ A.N- trouver un mécanisme / boucle pour vérouiller le compte aprés 3 tentatives.
+ 
 
 
 
@@ -42,57 +92,10 @@ Le système se termine.
 
 
 
-AFFICHAGE MENU COMPTE PERSONNEL:
-
-1- Changer le mot de passe
-2- Déposer un montant dans un compte
-3- Retirer un montant d'un compte
-4- Afficher le solde du compte (Chèque ou épargne)
-5- Effectuer un virement entre les comptes
-6- Payer une facture
-7- Fermer la session
-
-
-Si l'utilisateur choisi 1:
-
-Afficher message "Changer de mot de passe"
-
-Si le nouveau mot de passe respecte les règles
-
-Afficher message "Confirmer le nouveau mot de passe"
-
-Lorsque l'utilisateur confirme le nouveau mot de passe, le système retourne au menu usager.
 
 
 
 
-Si l'utilisateur choisi l'option 2 du menu compte perso:
 
-Afficher message "Déposer un montant dans un compte"
-
-Afficher message "Choisissez un compte: 1- Chèque 2- Épargne"
-
-Si l'utilisateur choisit Chèque, le dépôt va se faire dans le compte chèque.
-
-Si l'utilisateur choisit Épargne, le dépôt va se faire dans le compte épargne.
-
-L'utilisateur doit entrer le montant à déposer.
-
-Tant que le montant à déposer est négatif, afficher message "Veuillez entrer un montant valide"
-
-Lorsque le dépôt est effectué, afficher le solde du compte et retour au menu du compte.
-
-
-
-
-Si l'utilisateur choisi l'option 4 du menu compte perso:
-
-Afficher message "Veuillez sélectionner un compte (Chèque ou Épargne)"
-
-Si l'utilisateur sélectionne Chèque, afficher le solde du compte Chèque.
-
-Si l'utilisateur sélectionne Épargne, afficher le solde du compte Épargne.
-
-(Le montant doit être affiché dans le format xx xxx.xx$ )
 
 
