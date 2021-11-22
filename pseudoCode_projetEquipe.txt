@@ -65,3 +65,22 @@ Lorsque l'utilisateur confirme le nouveau mot de passe, le système retourne au 
 
 
 
+
+Si l'utilisateur choisi l'option 2 du menu compte perso:
+
+Afficher message "Déposer un montant dans un compte"
+
+Afficher message "Choisissez un compte: 1- Chèque 2- Épargne"
+
+Si l'utilisateur choisit Chèque, le dépôt va se faire dans le compte chèque.
+
+Si l'utilisateur choisit Épargne, le dépôt va se faire dans le compte épargne.
+
+L'utilisateur doit entrer le montant à déposer.
+
+Tant que le montant à déposer est négatif, afficher message "Veuillez entrer un montant valide"
+
+Lorsque le dépôt est effectué, afficher le solde du compte et retour au menu du compte.
+
+
+
