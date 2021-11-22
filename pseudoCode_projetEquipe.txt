@@ -84,3 +84,15 @@ Lorsque le dépôt est effectué, afficher le solde du compte et retour au menu 
 
 
 
+
+Si l'utilisateur choisi l'option 4 du menu compte perso:
+
+Afficher message "Veuillez sélectionner un compte (Chèque ou Épargne)"
+
+Si l'utilisateur sélectionne Chèque, afficher le solde du compte Chèque.
+
+Si l'utilisateur sélectionne Épargne, afficher le solde du compte Épargne.
+
+(Le montant doit être affiché dans le format xx xxx.xx$ )
+
+
